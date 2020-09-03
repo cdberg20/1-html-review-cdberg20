@@ -14,7 +14,26 @@
   </head>
   <body>
     <img class=topbanner src="img\headerimg.png" alt="Berg 'N Books Header Image">
-
+    <!-- NOTE: Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="public\index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="public\table.html">Book List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="public\user.html">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <h1> Book List</h1>
     <center><p>Find our current book titles listed below or use the form to add a new one.  </p></center>
     <br>
@@ -78,13 +97,13 @@
 
 <!-- NOTE: New Book Form -->
 <br>
-  <h2>Add a new book:</h2>
+  <h2>Add a New Book:</h2>
 
   <form>
     <div class="form-group">
       <label for="book title">Book Title
       </label>
-      <input type="text" class="form-control" id="title" placeholder="Enter a Title">
+      <input type="text" class="form-control" id="title" placeholder="">
     </div>
     <div class="form-group">
       <label for="book author">Author(s)
@@ -93,27 +112,21 @@
     </div>
     <div class="form-group">
       <label for="publication year">Publication Year</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <input type="number" class="form-control" id="year">
+    </input>
     </div>
     <div class="form-group">
-      <label for="exampleFormControlSelect2">Example multiple select</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <label for="book publisher">Publisher</label>
+      <input type="text" class="form-control" id="publisher" placeholder="">
     </div>
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label for="page count">Page Count</label>
+      <input type="number" class="form-control" id="pages">
+    </input>
+    </div>
+    <div class="form-group">
+      <label for="MSRP">MSRP</label>
+      <input type="text" class="form-control" id="MSRP" placeholder="USD">
     </div>
   </form>
 

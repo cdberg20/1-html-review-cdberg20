@@ -1,4 +1,9 @@
 
+html,
+body {
+  background-color: #f0eadf;
+}
+
 p {
   padding-left: 5em;
   padding-right: 5em;
@@ -24,12 +29,13 @@ a:link {
   color: #A9A9A9;
 }
 a:hover {
-  color: #71eeb8;
+  color: #cfe3da;
   text-decoration: none;
 }
 .table{
   margin: 15px;
 }
+
 thead {
   background: #D3E6E0;
   color:#CC840C;
@@ -37,4 +43,15 @@ thead {
 }
 .topbanner {
   width: 100%;
+}
+
+nav,
+navbar {
+  background-color:  	#e2e9a5;
+}
+
+form {
+  margin: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
